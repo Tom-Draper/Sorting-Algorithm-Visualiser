@@ -93,6 +93,23 @@ def bubbleSort(start_x, start_y, add_x_const, add_y_const, my_list):
             showPass(start_x, start_y, add_x_const, add_y_const, pass_no, my_list, previous_list)
             
     turtle.done() # Finished displaying
+    
+def insertionSort(start_x, start_y, add_x_const, add_y_const, my_list):
+    pass_no = 0
+    for i in range(1, len(my_list)): 
+        key = my_list[i] 
+        j = i-1
+        pass_no += 1 # Next pass
+        previous_list = my_list[:] # Record list before any changes made in this pass
+
+        while j >= 0 and key < my_list[j]:
+            my_list[j + 1] = my_list[j] 
+            j -= 1
+        my_list[j + 1] = key
+        # Display changes made during this pass
+        showPass(start_x, start_y, add_x_const, add_y_const, pass_no, my_list, previous_list)
+
+    turtle.done()
 
 def visualiser(my_list):
     length = len(my_list)
