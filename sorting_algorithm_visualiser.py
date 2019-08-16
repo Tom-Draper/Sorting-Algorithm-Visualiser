@@ -100,10 +100,20 @@ def visualiser(my_list):
     start_y = 450
     # X spacing between items in list
     # Divides middle 900 of window by the length of the list + 1
-    add_x_const = 900 / (length + 1) 
-    add_y_const = 50
+    add_x_const = 900 / (length + 1)
 
+    # Calculates length of y spacing between each pass based on maximum space 
+    # needed for bubble sort worst case scenario list of that size
+    # For list of 4 items:
+    # Window Space Available (900) = initial setup line (constant) + (3*constant) + (2*constant) + (constant)
+    temp = 1 # Initial setup line constant
+    for i in range(1, length): # Adds the constant from 1 to (length-1) times
+        temp += i
+    add_y_const = 900/temp
+
+    # Display written list values and initial drawn lines
     setup(start_x, start_y, add_x_const, add_y_const, my_list)
+    # Sort list and display after each pass
     bubbleSort(start_x, start_y, add_x_const, add_y_const, my_list)
 
 visualiser([5, 4, 3, 2, 1])
