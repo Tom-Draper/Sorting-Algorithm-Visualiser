@@ -111,6 +111,25 @@ def insertionSort(start_x, start_y, add_x_const, add_y_const, my_list):
 
     turtle.done()
 
+def selectionSort(start_x, start_y, add_x_const, add_y_const, my_list):
+    pass_no = 0
+    for i in range(len(my_list)):
+        minPosition = i
+        for j in range(i+1, len(my_list)):
+           if my_list[minPosition] > my_list[j]:
+               minPosition = j
+
+        pass_no += 1 # New pass
+        previous_list = my_list[:] # Record list before any changes made in this pass
+        # Swap items
+        temp = my_list[i]
+        my_list[i] = my_list[minPosition]
+        my_list[minPosition] = temp
+        # Display changes made during this pass
+        showPass(start_x, start_y, add_x_const, add_y_const, pass_no, my_list, previous_list)
+    
+    turtle.done()
+
 def visualiser(my_list):
     length = len(my_list)
     start_x = -450
