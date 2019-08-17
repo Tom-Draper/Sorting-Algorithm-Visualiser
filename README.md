@@ -11,3 +11,7 @@ How to display a series of changes made together at once using turtle.tracer
 Arrived by myself at a method of converting list index positions and pass numbers to coordnates on a screen using multiplier constants.
 
 -------------------------------------------------------
+
+A setup function displays each item in the list, with an initial vertical line.
+Bubble sort, insertion sort and selection sort implemented to sort the list.
+Each time a pass is made, a showPass function is called to display the changes in pass that has been made.
