@@ -16,4 +16,4 @@ A setup function displays each item in the list, with an initial vertical line t
 Bubble sort, insertion sort and selection sort are currently implemented to sort the list.
 Each time a pass is made, a showPass function is called to display the changes for each item in that particular pass.
 If a particular item hasn't changed position, that items line is continued vertically.
-If an item has changed position, the line moves diagonally to it's new ordered position.
+If an item has changed position, that items line moves diagonally to its new ordered position.
