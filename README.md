@@ -13,7 +13,7 @@ A simple project that allowed me to build upon the basics of my Python knowledge
 
 -------------------------------------------------------
 
-### How It Works:
+### How It Works
 A setup function displays each item in the list, with an initial vertical line to create a starting point for each line.
 Bubble sort, insertion sort and selection sort are currently implemented to sort the list.
 Each time a pass is made, a showPass function is called to display the changes for each item in that particular pass.
