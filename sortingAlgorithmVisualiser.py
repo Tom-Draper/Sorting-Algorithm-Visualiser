@@ -152,4 +152,20 @@ def visualiser(my_list):
     # Sort list and display after each pass
     bubbleSort(start_x, start_y, add_x_const, add_y_const, my_list)
 
-visualiser([6, 3, 2, 0])
+# Get a list of integer values from user
+inputValues = input("Enter a list of integers:\n")
+listToSort = []
+buildValue = ''
+for idx in range(len(inputValues)):
+    c = inputValues[idx]
+    if (c.isdigit()):
+        buildValue += c   # Building integer value
+        if idx == len(inputValues) - 1:
+            listToSort.append(int(buildValue))
+    else:
+        # If an integer value has been built, add to sorting list
+        if len(buildValue) > 0:
+            listToSort.append(int(buildValue))
+            buildValue = '' # Reset
+            
+visualiser(listToSort)
