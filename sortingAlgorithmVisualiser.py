@@ -152,4 +152,4 @@ def visualiser(my_list):
     # Sort list and display after each pass
     bubbleSort(start_x, start_y, add_x_const, add_y_const, my_list)
 
-visualiser([5, 4, 3, 2, 1])
+visualiser([6, 3, 2, 0])
