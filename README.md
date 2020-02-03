@@ -3,6 +3,9 @@
 ## Educational Project  
 This project allowed me to build upon the basics of my Python knowledge and incorporate the Turtle module. The program takes a list of items and graphically displays each items change of index and progression through the sorting algorithm in the form of a vertical line that can take discrete positions.
 
+### Bubble Sort
+![Completed Project](http://i.imgur.com/KvdLFOA.jpg)https://imgur.com/KvdLFOA
+
 #### Project Aims:
 - Maintain and expand my knowledge of Python.
 - Expand my knowledge of the Python turtle module.
