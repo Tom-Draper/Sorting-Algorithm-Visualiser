@@ -1,23 +1,22 @@
 # Sorting-Algorithm-Visualiser
-
-## Educational Project  
+ 
 This project allowed me to build upon the basics of my Python knowledge and incorporate the Turtle module. The program takes a list of items and graphically displays each items change of index and progression through the sorting algorithm in the form of a vertical line that can take discrete positions.
 
 ### Bubble Sort
 ![Completed Project](https://i.imgur.com/KvdLFOA.jpg)
 
 #### Project Aims:
-- Maintain and expand my knowledge of Python.
-- Expand my knowledge of the Python turtle module.
+- Maintain and expand my knowledge of Python
+- Expand my knowledge of the Python turtle module through practical use
 
 #### What I Learned:
-- How to display a series of drawing changes made together at once using turtle.tracer.
-- Arrived independently at a method of converting list index positions and pass numbers to coordnates on a screen using multiplier constants.
+- How to display a series of drawing changes made together at once using turtle.tracer
+- Arrived independently at a method of converting list index positions and pass numbers to coordnates on a screen using multiplier constants
 
 -------------------------------------------------------
 
 ## Getting Started
-Run sorting_algorithm_visualiser.py to start the program. You will be propted to enter a series of integers seperated by spaces.
+Run sorting_algorithm_visualiser.py to start the program. You will be prompted to enter a series of integers seperated by spaces.
 
 ### How it Works
 A setup function displays each item in the list, with an initial vertical line to create a starting point for each line.
