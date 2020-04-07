@@ -22,7 +22,9 @@ This project allowed me to build upon the basics of my Python knowledge and inco
 -------------------------------------------------------
 
 ## Getting Started
-Run sorting_algorithm_visualiser.py to start the program. You will be prompted to enter a series of integers seperated by spaces.
+Run sorting_algorithm_visualiser.py to start the program. 
+You will be prompted to enter a series of integers sepearated by any non-digit character.
+Then you will be prompted to enter your chosen algorithm.
 
 ### How it Works
 A setup function displays each item in the list, with an initial vertical line to create a starting point for each line.
