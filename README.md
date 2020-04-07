@@ -3,7 +3,10 @@
 This project allowed me to build upon the basics of my Python knowledge and incorporate the Turtle module. The program takes a list of items and graphically displays each items change of index and progression through the sorting algorithm in the form of a vertical line that can take discrete positions.
 
 ### Bubble Sort
-![Completed Project](https://i.imgur.com/KvdLFOA.jpg)
+![Bubble sort example](https://i.imgur.com/KvdLFOA.jpg)
+
+### Selection Sort
+![Selection sort example](https://i.imgur.com/WNoY74m.jpg)
 
 #### Project Aims:
 - Maintain and expand my knowledge of Python
