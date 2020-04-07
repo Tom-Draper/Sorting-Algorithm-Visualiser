@@ -130,7 +130,7 @@ def selectionSort(start_x, start_y, add_x_const, add_y_const, my_list):
     
     turtle.done()
 
-def visualiser(my_list):
+def visualiser(my_list, algorithm):
     length = len(my_list)
     start_x = -450
     start_y = 450
@@ -150,23 +150,52 @@ def visualiser(my_list):
     # Display written list values and initial drawn lines
     setup(start_x, start_y, add_x_const, add_y_const, my_list)
     # Sort list and display after each pass
-    bubbleSort(start_x, start_y, add_x_const, add_y_const, my_list)
+    algorithm(start_x, start_y, add_x_const, add_y_const, my_list)
 
-if __name__ == "__main__":    
+def getSortingValues():
     # Get a list of integer values from user
-    inputValues = input("Enter a list of integers:\n")
-    listToSort = []
-    buildValue = ''
-    for idx in range(len(inputValues)):
-        c = inputValues[idx]
-        if (c.isdigit()):
-            buildValue += c  # Building integer value
-            if idx == len(inputValues) - 1:
-                listToSort.append(int(buildValue))
+    input_values = input("Enter a list of integers:\n")
+    
+    to_sort = []
+    temp = ''
+    # Convert user input values to int list 
+    for idx in range(len(input_values)):
+        char = input_values[idx]
+        if (char.isdigit()):
+            temp += char  # Building next integer value
+            if idx == len(input_values) - 1:  # Check if at end
+                to_sort.append(int(temp))
         else:
             # If an integer value has been built, add to sorting list
-            if len(buildValue) > 0:
-                listToSort.append(int(buildValue))
-                buildValue = ''  # Reset
+            if len(temp) > 0:
+                to_sort.append(int(temp))
+                temp = ''  # Reset
+    return to_sort
 
-    visualiser(listToSort)
+def getSortingAlgorithm(available, algorithm_lookup):
+    selected_algorithm = algorithm_lookup['default']
+    selected = False
+    while not selected:
+        input_algorithm = input("Enter sorting algorithm:\n")
+        for key, value in available.items():
+            if input_algorithm.lower() in value:
+                selected_algorithm = key  # Take full name as input
+                selected = True
+    
+    algorithm = algorithm_lookup[selected_algorithm]  # Get function
+    
+    return algorithm  # Return the function of the selected algorithm
+
+if __name__ == "__main__":
+    available = {'bubble sort': ['bubble sort', 'bubble', 'bub', 'bs', 'b'],
+                 'insertion sort': ['insertion sort', 'insertion', 'insert', 'is', 'i'],
+                 'selection sort': ['selection sort', 'selection', 'select', 'ss', 's']}
+    default = bubbleSort           
+    algorithm_lookup = {'default': default,
+                        'bubble sort': bubbleSort,
+                        'insertion sort': insertionSort,
+                        'selection sort': selectionSort}
+    
+    to_sort = getSortingValues()
+    algorithm = getSortingAlgorithm(available, algorithm_lookup)
+    visualiser(to_sort, algorithm)
