@@ -5,6 +5,9 @@ This project allowed me to build upon the basics of my Python knowledge and inco
 ### Bubble Sort
 ![Bubble sort example](https://i.imgur.com/KvdLFOA.jpg)
 
+### Insertion Sort
+![Insertion sort example](https://i.imgur.com/tblxWix.jpg)
+
 ### Selection Sort
 ![Selection sort example](https://i.imgur.com/WNoY74m.jpg)
 
