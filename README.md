@@ -17,7 +17,7 @@ This project allowed me to build upon the basics of my Python knowledge and inco
 ![Insertion Sort](https://user-images.githubusercontent.com/41476809/90986854-f73f1280-e57d-11ea-910d-9bbb6921f6fa.png)
 
 ### Selection Sort
-![Selection sort example](https://i.imgur.com/WNoY74m.jpg)
+![Selection Sort](https://user-images.githubusercontent.com/41476809/90986881-2c4b6500-e57e-11ea-9550-0ac68b540354.png)
 
 -------------------------------------------------------
 
