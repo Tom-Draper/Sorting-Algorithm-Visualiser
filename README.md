@@ -11,7 +11,7 @@ This project allowed me to build upon the basics of my Python knowledge and inco
 - Arrived independently at a method of converting list index positions and pass numbers to coordnates on a screen using multiplier constants
 
 ### Bubble Sort
-![Bubble sort example](https://i.imgur.com/KvdLFOA.jpg)
+![Bubble Sort](https://user-images.githubusercontent.com/41476809/90986792-6405dd00-e57d-11ea-9b9a-66a15c2db3c2.jpg)
 
 ### Insertion Sort
 ![Insertion sort example](https://i.imgur.com/tblxWix.jpg)
