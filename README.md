@@ -14,7 +14,7 @@ This project allowed me to build upon the basics of my Python knowledge and inco
 ![Bubble Sort](https://user-images.githubusercontent.com/41476809/90986792-6405dd00-e57d-11ea-9b9a-66a15c2db3c2.jpg)
 
 ### Insertion Sort
-![Insertion sort example](https://i.imgur.com/tblxWix.jpg)
+![Insertion Sort](https://user-images.githubusercontent.com/41476809/90986854-f73f1280-e57d-11ea-910d-9bbb6921f6fa.png)
 
 ### Selection Sort
 ![Selection sort example](https://i.imgur.com/WNoY74m.jpg)
